@@ -1,0 +1,86 @@
+/* Fondo de partículas */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(circle, #000428, #004e92);
+  }
+  
+  /* Contenido principal */
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Encabezado */
+  h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  /* Cuadro de explicación / resultados */
+  #explanation {
+    background: rgba(0, 0, 0, 0.6);
+    color: #d0e6ff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-left: 5px solid #16a085;
+    border-radius: 5px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  /* Controles */
+  .controls {
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  /* Botones */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Degradado moderno */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Efecto invertido */
+  }
+  
+  button:active {
+    transform: scale(1.05);
+  }
+  
+  #reset {
+    background: linear-gradient(135deg, #e74c3c, #e67e22); /* Degradado rojo */
+  }
+  
+  #reset:hover {
+    background: linear-gradient(135deg, #e67e22, #e74c3c);
+  }
+  
