@@ -8,7 +8,7 @@ Ejercicio de `JavaScript` utilizando la Relatividad Especial
 project-folder/
 │
 ├── index.html         (HTML principal)
-├── styles.css         (CSS separado, con comentarios divulgativos)
-├── script.js          (JavaScript separado, documentado con JSDocs)
-├── favicon.ico       (Favicon del proyecto)
+├── styles.css         (CSS comentado)
+├── script.js          (JavaScript documentado con JSDocs)
+├── favicon.ico        (Favicon del proyecto)
 ```
