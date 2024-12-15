@@ -94,10 +94,15 @@
     font-size: 16px;
     text-align: center;
     transition: background-color 0.3s ease;
-  }
-  
+    z-index: 1000; /* Muy alto para pruebas */
+    position: relative; /* Necesario para que el z-index funcione */
+}
+
+    
   .btn:hover {
     background-color: #0056b3;
   }
   
-  
+  .btn {
+    display: inline-block !important;
+}
