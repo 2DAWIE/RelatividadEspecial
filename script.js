@@ -55,7 +55,8 @@ particlesJS('particles-js', {
   
     // Aseguramos que el contenido inicial incluye los delimitadores de MathJax
     explanationBox.innerHTML = `
-      <strong>¡Bienvenido!</strong> Según la teoría de la relatividad especial...
+       <strong>¡Bienvenido!</strong>
+      Según la <a href="/relatividad.html">Relatividad Especial</a> cuanto más rápido te muevas más lento transcurrirá el tiempo para ti en comparación con un observador estacionario.
       <div class="mathjax-equation">
         \\[
         t' = \\frac{t}{\\sqrt{1 - \\frac{v^2}{c^2}}}
