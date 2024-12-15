@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatividad Especial</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>Relatividad Especial</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué es la Relatividad Especial?</h2>
+      <p>
+        La Relatividad Especial, formulada por Albert Einstein en 1905, describe cómo el tiempo y el espacio se ven afectados por la velocidad a la que se mueve un objeto.
+      </p>
+      <p>
+        A diferencia de la Relatividad General, que aborda los efectos de la gravedad en el tiempo y el espacio, la Relatividad Especial se centra en movimientos rectilíneos uniformes y velocidades cercanas a la velocidad de la luz.
+      </p>
+    </section>
+
+    <section>
+      <h2>Diferencias clave entre Relatividad Especial y General</h2>
+      <ul>
+        <li><strong>Relatividad Especial:</strong> Tiempo y espacio cambian según la velocidad.</li>
+        <li><strong>Relatividad General:</strong> La gravedad afecta al tiempo y al espacio.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Recursos recomendados</h2>
+      <ul>
+        <li><a href="https://es.wikipedia.org/wiki/Relatividad_especial" target="_blank">Wikipedia: Relatividad Especial</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Relatividad_general" target="_blank">Wikipedia: Relatividad General</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <button class="back-button" onclick="window.history.back()">Volver</button>
+    </footer>
+  </main>
+
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 150, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.7, random: true },
+        size: { value: 1.5, random: true },
+        move: { enable: true, speed: 0.5, random: true },
+        line_linked: { enable: false }
+      },
+      interactivity: { events: { onhover: { enable: false }, onclick: { enable: false } } },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
