@@ -47,13 +47,31 @@ particlesJS('particles-js', {
   }
   
   /**
-   * Reinicia y procesa MathJax explícitamente en la primera carga.
+   * Forzar el renderizado inicial al cargar la página.
    */
-  function resetAndRenderMath() {
-    console.log("Forzando el renderizado inicial de MathJax...");
-    MathJax.startup.promise
-      .then(() => renderMathInContainer("explanation"))
-      .catch(err => console.error("Error al reiniciar MathJax:", err));
+  function renderInitialMath() {
+    console.log("Renderizando fórmulas iniciales...");
+    const explanationBox = document.getElementById('explanation');
+  
+    // Aseguramos que el contenido inicial incluye los delimitadores de MathJax
+    explanationBox.innerHTML = `
+      <strong>¡Bienvenido!</strong> Según la teoría de la relatividad especial...
+      <div class="mathjax-equation">
+        \\[
+        t' = \\frac{t}{\\sqrt{1 - \\frac{v^2}{c^2}}}
+        \\]
+      </div>
+      Donde:
+      <ul>
+        <li>\\(t'\\): Tiempo percibido por el observador estacionario.</li>
+        <li>\\(t\\): Tiempo percibido por el viajero.</li>
+        <li>\\(v\\): Velocidad del objeto (fracción de \\(c\\)).</li>
+        <li>\\(c\\): Velocidad de la luz (\\(299,792,458 \\, \\text{m/s}\\)).</li>
+      </ul>
+    `;
+  
+    // Renderizar MathJax para el contenido inicial
+    setTimeout(() => renderMathInContainer("explanation"), 100);
   }
   
   /**
@@ -87,36 +105,15 @@ particlesJS('particles-js', {
     document.getElementById('reset').style.display = "inline-block";
   
     // Renderizar MathJax después de actualizar el contenido dinámico
-    renderMathInContainer("explanation");
+    setTimeout(() => renderMathInContainer("explanation"), 50);
   }
   
   /**
    * Restaura la explicación original.
    */
   function resetPage() {
-    const explanationBox = document.getElementById('explanation');
-  
-    explanationBox.innerHTML = `
-      <strong>¡Bienvenido!</strong> Según la teoría de la relatividad especial...
-      <div class="mathjax-equation">
-        \\[
-        t' = \\frac{t}{\\sqrt{1 - \\frac{v^2}{c^2}}}
-        \\]
-      </div>
-      Donde:
-      <ul>
-        <li>\\(t'\\): Tiempo percibido por el observador estacionario.</li>
-        <li>\\(t\\): Tiempo percibido por el viajero.</li>
-        <li>\\(v\\): Velocidad del objeto (fracción de \\(c\\)).</li>
-        <li>\\(c\\): Velocidad de la luz (\\(299,792,458 \\, \\text{m/s}\\)).</li>
-      </ul>
-    `;
-    explanationBox.style.borderLeftColor = "#16a085";
-  
+    renderInitialMath();
     document.getElementById('reset').style.display = "none";
-  
-    // Renderizar MathJax después de restaurar el contenido original
-    renderMathInContainer("explanation");
   }
   
   // Asignamos eventos a los botones
@@ -124,7 +121,5 @@ particlesJS('particles-js', {
   document.getElementById('reset').addEventListener('click', resetPage);
   
   // Renderizar MathJax al cargar
-  document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(resetAndRenderMath, 100); // Retraso manual para asegurar el renderizado inicial
-  });
+  document.addEventListener("DOMContentLoaded", renderInitialMath);
   
