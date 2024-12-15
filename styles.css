@@ -83,25 +83,11 @@
   #reset:hover {
     background: linear-gradient(135deg, #e67e22, #e74c3c);
   }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
 
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #ff0000; /* Rojo para pruebas */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -113,4 +99,5 @@
   .btn:hover {
     background-color: #0056b3;
   }
+  
   
