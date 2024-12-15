@@ -12,7 +12,7 @@ particlesJS('particles-js', {
       shape: { type: "circle" },
       opacity: { value: 0.7, random: true },
       size: { value: 1.5, random: true },
-      move: { enable: true, speed: 0.3, random: true },
+      move: { enable: true, speed: 3.0, random: true },
       line_linked: { enable: false }
     },
     interactivity: {
@@ -55,7 +55,6 @@ particlesJS('particles-js', {
   
     // Aseguramos que el contenido inicial incluye los delimitadores de MathJax
     explanationBox.innerHTML = `
-       <strong>¡Bienvenido!</strong>
       Según la <a href="/relatividad.html">Relatividad Especial</a> cuanto más rápido te muevas más lento transcurrirá el tiempo para ti en comparación con un observador estacionario.
       <div class="mathjax-equation">
         \\[
