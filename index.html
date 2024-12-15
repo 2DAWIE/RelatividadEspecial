@@ -28,8 +28,8 @@
   <!-- Encabezado principal -->
   <header>
     <h1>Máquina del Tiempo 🕒</h1>
-    <div id="explanation">
-      Según la teoría de la <a href="/relatividad.html">Relatividad Especial</a>, cuanto más rápido te muevas, más lento transcurrirá el tiempo para ti en comparación con un observador estacionario.
+    <div id="explanation">  
+      Según la teoría de la <a href="relatividad.html" class="btn">Relatividad Especial</a>, cuanto más rápido te muevas, más lento transcurrirá el tiempo para ti en comparación con un observador estacionario.
       <br><br>
       Fórmula usada:
       <div style="text-align:center;">
@@ -49,11 +49,12 @@
 
   <!-- Controles -->
   <main>
-    <div class="controls">
+    <div>
       <label for="velocity-slider">Velocidad (fracción de c):</label>
-      <input type="range" id="velocity-slider" min="0.01" max="0.9" step="0.01" value="0.5">
-      <span id="velocity-value">0.50</span>
+      <span id="velocity-display">0.5</span>
     </div>
+    <input type="range" id="velocity-slider" min="0" max="1" step="0.01" value="0.5">
+    
     <div class="controls">
       <label for="travel-time">Tiempo de viaje (en años):</label>
       <input type="number" id="travel-time" min="1" value="10">

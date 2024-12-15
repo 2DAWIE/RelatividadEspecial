@@ -122,4 +122,11 @@ particlesJS('particles-js', {
   
   // Renderizar MathJax al cargar
   document.addEventListener("DOMContentLoaded", renderInitialMath);
-  
+
+const slider = document.getElementById('velocity-slider');
+const display = document.getElementById('velocity-display');
+
+slider.addEventListener('input', () => {
+  const velocity = slider.value;
+  display.textContent = velocity;
+});
