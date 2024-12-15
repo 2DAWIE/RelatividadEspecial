@@ -84,25 +84,35 @@
     background: linear-gradient(135deg, #e67e22, #e74c3c);
   }
 
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff0000; /* Rojo para pruebas */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    z-index: 1000; /* Muy alto para pruebas */
-    position: relative; /* Necesario para que el z-index funcione */
+#explanation {
+  transition: none; /* Para pruebas */
 }
 
-    
-  .btn:hover {
-    background-color: #0056b3;
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Degradado llamativo */
+  box-shadow: 0 4px 15px rgba(255, 65, 108, 0.5);
+  transition: transform 0.3s ease, background 0.3s ease;
+  animation: pulse 1.5s infinite; /* Animación de pulso */
+}
+
+.btn:hover {
+  transform: scale(1.1); /* Zoom al pasar el cursor */
+  background: linear-gradient(135deg, #ff4b2b, #ff416c); /* Inversión del degradado */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(255, 65, 108, 0.5);
   }
-  
-  .btn {
-    display: inline-block !important;
+  50% {
+    box-shadow: 0 8px 30px rgba(255, 65, 108, 0.8);
+  }
 }
