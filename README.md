@@ -60,4 +60,4 @@ Este proyecto ilustra conceptos básicos de la teoría de la relatividad, utiliz
 ## Créditos
 
 - **Autor**: [Joanh](https://github.com/joanh)
-- **Asistencia Técnica**: ChatGPT de [OpenAI](https://openai.com/)
+- **Asistencia Técnica**: `ChatGPT` de [OpenAI](https://openai.com/)
