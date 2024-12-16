@@ -54,7 +54,7 @@ Este proyecto ilustra conceptos básicos de la teoría de la relatividad, utiliz
 1. Clona este repositorio en tu máquina local:
 
 ```bash
-   git clone https://github.com/tu_usuario/viajero-relativista.git
+   git clone https://github.com/2DAWIE/RelatividadEspecial.git
 ```
 
 ## Créditos
