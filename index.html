@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <title>Máquina del Tiempo Relativista</title>
+  <!-- Incluye la librería de FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
   <!-- Enlace a la hoja de estilos -->
   <link rel="stylesheet" href="styles.css">
@@ -17,11 +19,18 @@
     };
   </script>
 
-
   <!-- MathJax desde CDN -->
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
 </head>
 <body>
+  <!-- Enlace a repositorio en GitHub -->
+  <div class="floating-github">
+  <a href="https://github.com/tu-repositorio" target="_blank" aria-label="Ver el repositorio en GitHub">
+    <i class="fab fa-github github-icon"></i>
+    <span class="github-text">Ver el repositorio</span>
+  </a>
+</div>
+
   <!-- Contenedor de partículas -->
   <div id="particles-js"></div>
 
@@ -53,12 +62,14 @@
       <label for="velocity-slider">Velocidad (fracción de c):</label>
       <span id="velocity-display">0.5</span>
     </div>
-    <input type="range" id="velocity-slider" min="0" max="1" step="0.01" value="0.5">
+    <!-- Input para el deslizador de velocidad -->
+      <input type="range" id="velocity-slider" name="velocity-slider" min="0" max="100" step="0.01" value="0.5">
     
-    <div class="controls">
+      <div class="controls">
       <label for="travel-time">Tiempo de viaje (en años):</label>
-      <input type="number" id="travel-time" min="1" value="10">
-    </div>
+      <!-- Input para el tiempo de viaje -->
+      <input type="number" id="travel-time" name="travel-time" placeholder="Tiempo de viaje" value="10">
+    </div> 
     <div class="buttons">
       <button id="travel">Iniciar Viaje</button>
       <button id="reset" style="display: none;">Regresar al presente</button>

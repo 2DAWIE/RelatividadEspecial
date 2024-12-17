@@ -1,4 +1,4 @@
-[![Licencia Creative Commons](https://img.shields.io/badge/Licencia-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/deed.es) [![Gracias](https://img.shields.io/badge/Creado%20con-ChatGPT-orange.svg)](https://openai.com/chatgpt) [![Desplegado en Netlify](https://api.netlify.com/api/v1/badges/f2c48377-95bd-438f-a5fa-c200f4e3d217/deploy-status)](https://app.netlify.com/sites/viajerelativista/deploys)
+[![Licencia Creative Commons](https://img.shields.io/badge/Licencia-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/deed.es) [![Gracias](https://img.shields.io/badge/Creado%20con-ChatGPT-orange.svg)](https://openai.com/chatgpt) [![Desplegado en Netlify](https://api.netlify.com/api/v1/badges/f2c48377-95bd-438f-a5fa-c200f4e3d217/deploy-status)](https://viajerelativista.netlify.app/)
 
 # Relatividad Especial
 
